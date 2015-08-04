@@ -1,3 +1,4 @@
+# Prompt user and execute command in current shell
 function pmt_cmd(){
   REPLY=n
   echo
@@ -10,6 +11,7 @@ function pmt_cmd(){
   fi
 }
 
+# Echo output and excute command in current shell
 function put_cmd(){
   echo
   echo "$1"
