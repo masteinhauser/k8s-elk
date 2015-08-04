@@ -1,0 +1,6 @@
+[submodule "kubernetes-elasticsearch-cluster"]
+	path = kubernetes-elasticsearch-cluster
+	url = git@github.com:pires/kubernetes-elasticsearch-cluster.git
+[submodule "kubernetes-elk-cluster"]
+	path = kubernetes-elk-cluster
+	url = git@github.com:pires/kubernetes-elk-cluster.git

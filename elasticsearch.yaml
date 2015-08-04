@@ -1,0 +1,24 @@
+---
+  kind: "ReplicationController"
+  apiVersion: "v1"
+  metadata: 
+    name: "elasticsearch"
+    labels: 
+      name: "elasticsearch"
+  spec: 
+    replicas: 1
+    selector: 
+      name: "elasticsearch"
+    template: 
+      metadata: 
+        labels: 
+          name: "elasticsearch"
+      spec: 
+        containers: 
+          - 
+            name: "elasticsearch"
+            image: "elasticsearch"
+            ports: 
+              - 
+                containerPort: 6379
+                protocol: "TCP"
